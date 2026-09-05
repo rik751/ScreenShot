@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Firefox-Style Screenshot Tool",
+  "version": "1.2",
+  "description": "Stable Firefox screenshot tool with element snapping, eye animation, and clipboard copy.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "clipboardWrite"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {},
+  "commands": {
+    "take-screenshot": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "MacCtrl+Shift+S"
+      },
+      "description": "Trigger Firefox-style selection screenshot"
+    }
+  }
+}
